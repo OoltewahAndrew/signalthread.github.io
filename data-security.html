@@ -1,112 +1,49 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Data Security & Compliance – Signal Thread</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Security – Signal Thread</title>
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <div class="st-wrapper">
-    <header class="st-header">
-      <div class="st-container st-header-inner">
-        <a class="brand" href="index.html" aria-label="Signal Thread Home">
-          <div class="mark" aria-hidden="true"></div>
-          <div><span>Signal Thread</span><small>Public safety analytics</small></div>
-        </a>
 
-        <nav class="nav" aria-label="Primary navigation">
-          <a href="index.html">Home</a>
-          <a href="services.html">Services</a>
-          <a href="how-it-works.html">How It Works</a>
-          <a href="who-we-serve.html">Who We Serve</a>
-          <a href="sample-work.html">Sample Work</a>
-          <a href="about.html">About</a>
-          <a class="active" href="data-security.html">Data Security</a>
-          <a href="contact.html">Contact</a>
-        </nav>
+<div class="st-wrapper">
+
+  <header class="st-header">
+    <div class="st-header-inner">
+      <div class="st-brand">Signal Thread</div>
+      <nav class="st-nav">
+        <a href="/">Home</a>
+        <a href="/services.html">Services</a>
+        <a href="/how-it-works.html">How It Works</a>
+        <a href="/who-we-serve.html">Who We Serve</a>
+        <a href="/sample-work.html">Sample Work</a>
+        <a href="/about.html">About</a>
+        <a href="/data-security.html" class="active">Data Security</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="st-section">
+    <div class="st-surface">
+      <h1>Data Security & Compliance</h1>
+
+      <div class="st-grid">
+        <div class="st-card">Secure handling</div>
+        <div class="st-card">HIPAA awareness</div>
+        <div class="st-card">Retention & deletion</div>
       </div>
-    </header>
+    </div>
+  </section>
 
-    <main>
-      <section class="section">
-        <div class="st-container">
-          <div class="section-head">
-            <h1>Data Security & Compliance</h1>
-            <div class="faint">Designed to remove procurement friction</div>
-          </div>
+  <footer class="st-footer">
+    <div class="st-footer-inner">
+      <span>© Signal Thread</span>
+    </div>
+  </footer>
 
-          <div class="grid-2">
-            <div class="card pad">
-              <h2>Data handling practices</h2>
-              <ul class="list">
-                <li>Access limited to project scope and need-to-know</li>
-                <li>Secure storage during analysis</li>
-                <li>Outputs shared through approved channels</li>
-              </ul>
-              <p class="small">
-                We can align to your municipality’s preferred transfer and retention requirements.
-              </p>
-            </div>
-
-            <div class="card pad">
-              <h2>Secure transfer methods</h2>
-              <ul class="list">
-                <li>Secure file transfer (SFTP or equivalent)</li>
-                <li>Encrypted archives when needed</li>
-                <li>Municipality-approved sharing options</li>
-              </ul>
-              <div class="callout">
-                <strong>Goal:</strong> Use what your clerk/IT already trusts, not a new workflow.
-              </div>
-            </div>
-
-            <div class="card pad">
-              <h2>HIPAA awareness</h2>
-              <p>
-                Many public safety datasets may include sensitive fields. While you may not be a covered entity,
-                we handle data with appropriate care and minimize use of sensitive fields where possible.
-              </p>
-              <ul class="list">
-                <li>Minimize exposure of sensitive identifiers</li>
-                <li>Aggregate reporting where feasible</li>
-                <li>Redaction for board/public-facing outputs</li>
-              </ul>
-            </div>
-
-            <div class="card pad">
-              <h2>Retention & deletion</h2>
-              <p>
-                We can retain data only as long as needed for the engagement and delete upon completion, subject to
-                any municipality requirements.
-              </p>
-              <ul class="list">
-                <li>Defined retention window</li>
-                <li>Deletion confirmation available upon request</li>
-                <li>Project-specific scope control</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="actions">
-            <a class="btn primary" href="contact.html">Request a Consultation</a>
-            <a class="btn" href="how-it-works.html">How It Works</a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="st-container footer-inner">
-        <div>© <span id="y"></span> Signal Thread</div>
-        <div><a href="contact.html">Contact</a></div>
-      </div>
-    </footer>
-  </div>
-
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
+</div>
 </body>
 </html>

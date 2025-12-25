@@ -1,34 +1,113 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact – Signal Thread</title>
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="st-wrapper">
+    <header class="st-header">
+      <div class="st-container st-header-inner">
+        <a class="brand" href="index.html" aria-label="Signal Thread Home">
+          <div class="mark" aria-hidden="true"></div>
+          <div><span>Signal Thread</span><small>Public safety analytics</small></div>
+        </a>
 
-<div class="st-wrapper">
-  <section class="st-container">
-    <h1>Contact</h1>
+        <nav class="nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="how-it-works.html">How It Works</a>
+          <a href="who-we-serve.html">Who We Serve</a>
+          <a href="sample-work.html">Sample Work</a>
+          <a href="about.html">About</a>
+          <a href="data-security.html">Data Security</a>
+          <a class="active" href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-    <p>
-      If you’re trying to understand whether your data can support
-      a specific decision, analysis, or reporting need,
-      the easiest way to start is a short conversation.
-    </p>
+    <main>
+      <section class="section">
+        <div class="st-container">
+          <div class="section-head">
+            <h1>Request a Consultation</h1>
+            <div class="faint">Clear next step. No pressure. Quick assessment.</div>
+          </div>
 
-    <p>
-      Email:<br>
-      <a href="mailto:you@signalthread.io">you@signalthread.io</a>
-    </p>
+          <div class="grid-2">
+            <div class="card pad">
+              <h2>What happens next</h2>
+              <p>
+                We’ll review your situation and recommend whether an analysis makes sense, what data is needed,
+                and what a realistic timeline looks like.
+              </p>
+              <ul class="list">
+                <li>15–30 minute intro call</li>
+                <li>Confirm goals, constraints, and stakeholders</li>
+                <li>Define a scope aligned to board questions</li>
+              </ul>
 
-    <p>
-      <a href="/">← Back to overview</a>
-    </p>
-  </section>
-</div>
+              <div class="callout">
+                <strong>Reminder:</strong> No software replacement required. We work with your existing RMS/CAD.
+              </div>
 
+              <hr class="sep" />
+
+              <p class="small">
+                Prefer email? <a href="mailto:you@signalthread.io">you@signalthread.io</a><br />
+                (Replace this address when you’re ready.)
+              </p>
+            </div>
+
+            <div class="card pad">
+              <h2>Send a note</h2>
+              <!-- Static site note: this form is visual only.
+                   Later you can connect it to Formspree, Netlify Forms, or a backend. -->
+              <form class="form" action="#" method="post">
+                <div class="field">
+                  <label for="name">Name</label>
+                  <input id="name" name="name" type="text" placeholder="Your name" />
+                </div>
+
+                <div class="field">
+                  <label for="role">Role / Title</label>
+                  <input id="role" name="role" type="text" placeholder="Chief, Administrator, Trustee, Clerk…" />
+                </div>
+
+                <div class="field">
+                  <label for="muni">Municipality / Agency</label>
+                  <input id="muni" name="muni" type="text" placeholder="Township / Village / Department" />
+                </div>
+
+                <div class="field">
+                  <label for="problem">What problem are you trying to solve?</label>
+                  <textarea id="problem" name="problem" placeholder="Example: staffing justification, budget support, coverage concerns…"></textarea>
+                </div>
+
+                <button class="btn primary" type="submit">Submit (placeholder)</button>
+                <p class="small faint">
+                  This form is currently a placeholder for GitHub Pages. Hook it up later to a form service.
+                </p>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="st-container footer-inner">
+        <div>© <span id="y"></span> Signal Thread</div>
+        <div><a href="data-security.html">Data Security</a></div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

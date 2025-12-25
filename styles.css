@@ -5,7 +5,7 @@
   --muted: rgba(255, 255, 255, 0.85);
   --soft: rgba(255, 255, 255, 0.65);
 }
- 
+
 * {
   box-sizing: border-box;
 }
@@ -26,25 +26,36 @@ body {
 }
 
 /* ======================
-   LAYOUT
+   LAYOUT SYSTEM
 ====================== */
 
-.st-container,
+/* Shared content width */
+.st-container {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4.5rem 1.5rem;
+}
+
+/* Full-width sections */
 .st-section {
   padding: 4.5rem 1.5rem;
 }
 
-/* Constrain inner content while allowing full-width backgrounds */
+/* Constrain inner content */
 .st-section > * {
   max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
 }
 
-
 /* ======================
    HERO
 ====================== */
+
+.st-hero {
+  text-align: left;
+}
 
 .st-hero h1 {
   font-size: clamp(2.4rem, 4vw, 3rem);
@@ -59,7 +70,10 @@ body {
   line-height: 1.7;
 }
 
-/* CTA */
+/* ======================
+   CTA
+====================== */
+
 .st-btn {
   display: inline-block;
   margin-top: 1.75rem;
@@ -71,14 +85,17 @@ body {
   text-decoration: none;
 }
 
-/* ECG */
+/* ======================
+   ECG
+====================== */
+
 .st-ecg {
   margin-top: 3rem;
   max-width: 700px;
 }
 
 /* ======================
-   LIGHT SECTION (CLARITY)
+   LIGHT SECTION
 ====================== */
 
 .st-section--light {
@@ -94,6 +111,28 @@ body {
 .st-section--light p,
 .st-section--light span {
   color: #333;
+}
+
+/* ======================
+   HEADERS & COPY
+====================== */
+
+.st-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.st-note,
+.st-process-detail {
+  text-align: left;
+}
+
+.st-note {
+  max-width: 760px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.65;
 }
 
 /* ======================
@@ -114,19 +153,7 @@ body {
 }
 
 /* ======================
-   EXPLANATORY COPY
-====================== */
-
-.st-note {
-  max-width: 760px;
-  margin: 0 auto;
-  font-size: 1.05rem;
-  line-height: 1.65;
-  text-align: left;
-}
-
-/* ======================
-   PROCESS (WORKSPACE)
+   PROCESS
 ====================== */
 
 .st-process {
@@ -137,11 +164,13 @@ body {
   border-radius: 8px;
 }
 
-
 .st-process-line {
   display: flex;
   justify-content: space-between;
   gap: 2rem;
+  border-top: 2px solid var(--orange);
+  padding-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .st-process-line span {
@@ -149,12 +178,10 @@ body {
   text-align: center;
 }
 
-
 .st-process-detail {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 2.5rem;
-  text-align: left;
 }
 
 .st-process-detail p {
@@ -165,25 +192,20 @@ body {
 }
 
 /* ======================
-   ALIGNMENT RULES
+   LINKS
 ====================== */
 
-/* Hero is editorial and grounded */
-.st-hero {
-  text-align: left;
-  max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
+a {
+  color: var(--orange);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 106, 40, 0.4);
 }
 
-/* Section headers are centered */
-.st-section h2 {
-  text-align: center;
+a:hover {
+  border-bottom-color: var(--orange);
 }
 
-/* Body copy is always readable */
-.st-note,
-.st-process-detail {
-  text-align: left;
+.st-link-subtle {
+  font-size: 0.9rem;
+  opacity: 0.8;
 }
-

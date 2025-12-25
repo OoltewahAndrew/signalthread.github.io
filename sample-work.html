@@ -1,1 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sample Work – Signal Thread</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="st-wrapper">
+    <header class="st-header">
+      <div class="st-container st-header-inner">
+        <a class="brand" href="index.html" aria-label="Signal Thread Home">
+          <div class="mark" aria-hidden="true"></div>
+          <div><span>Signal Thread</span><small>Public safety analytics</small></div>
+        </a>
 
+        <nav class="nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="how-it-works.html">How It Works</a>
+          <a href="who-we-serve.html">Who We Serve</a>
+          <a class="active" href="sample-work.html">Sample Work</a>
+          <a href="about.html">About</a>
+          <a href="data-security.html">Data Security</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="st-container">
+          <div class="section-head">
+            <h1>Sample Work</h1>
+            <div class="faint">Examples of what decision-makers actually see</div>
+          </div>
+
+          <div class="grid-2">
+            <div class="card pad">
+              <h2>Redacted Dashboard (Example)</h2>
+              <p>
+                A board doesn’t need every data column. They need the signal: demand, coverage, and implications.
+                This is the visual style we use to keep attention on decisions.
+              </p>
+
+              <div class="sample-frame">
+                <strong>Placeholder dashboard modules:</strong>
+                <ul class="list">
+                  <li>Calls by hour/day</li>
+                  <li>Peak overlap windows</li>
+                  <li>Unit utilization</li>
+                  <li>Response patterns (summary-level)</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card pad">
+              <h2>Sample Staffing Curve</h2>
+              <p>
+                A staffing curve shows when coverage is “adequate,” “tight,” or “under pressure,” based on call demand.
+                It turns “we feel busy” into a chart a board can understand.
+              </p>
+
+              <div class="sample-frame">
+                <strong>Example caption used in board packets:</strong>
+                <code>
+Peak demand occurs 10:00–14:00 and 17:00–20:00.
+The proposed schedule option increases overlap during peak windows
+without increasing total staffed hours.
+                </code>
+              </div>
+            </div>
+
+            <div class="card pad">
+              <h2>Board Slide Excerpt (Example)</h2>
+              <p>
+                Slides are designed for public meetings: fewer words, clearer visuals, and a direct line from
+                finding → impact → options.
+              </p>
+
+              <div class="sample-frame">
+                <strong>Slide skeleton:</strong>
+                <code>
+1) What changed?
+- Call demand increased in weekday mid-day windows.
+
+2) Why it matters
+- Peak overlaps increased; coverage strain shows up as delayed availability.
+
+3) Options
+A) Adjust shift overlap (no additional headcount)
+B) Add part-time peak coverage (targeted hours)
+C) Maintain status quo (documented risk)
+                </code>
+              </div>
+            </div>
+
+            <div class="card pad">
+              <h2>“What a Board Actually Sees”</h2>
+              <p>
+                Boards respond to clarity: what we know, how we know it, and what the options are.
+                The goal is defensible decision-making, not technical impressiveness.
+              </p>
+
+              <div class="sample-frame">
+                <strong>Example board-ready summary paragraph:</strong>
+                <code>
+Based on CAD/RMS demand patterns and staffing schedules provided,
+peak call overlap occurs most frequently during weekday mid-day periods.
+The recommended coverage option improves peak overlap coverage while
+keeping total staffed hours flat. This recommendation is supported by
+validated call volume distributions and documented assumptions.
+                </code>
+              </div>
+            </div>
+          </div>
+
+          <div class="callout">
+            <strong>Note:</strong> These examples use placeholder data and redacted formats.
+            Real engagement outputs are built from your RMS/CAD/payroll/schedule sources and validated with your team.
+          </div>
+
+          <div class="actions">
+            <a class="btn primary" href="contact.html">Request a Consultation</a>
+            <a class="btn" href="services.html">See Services</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="st-container footer-inner">
+        <div>© <span id="y"></span> Signal Thread</div>
+        <div><a href="contact.html">Contact</a></div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
